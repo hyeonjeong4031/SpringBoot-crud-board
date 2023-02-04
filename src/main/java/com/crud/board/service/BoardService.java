@@ -42,6 +42,11 @@ public class BoardService {
         return boardRepository.findAll(pageable);
     }
 
+    public Page<Board> boardSearchList(String searchKeyword,Pageable pageable){
+
+        return boardRepository.findByTitleContaining(searchKeyword, pageable);
+    }
+
     // 상세 게시글 불러오기
     public Board boardView(Integer id){
         //  findby id를 optional 값으로 받아오는데 get으로 해주면 된다
