@@ -2,7 +2,7 @@
 
 ### 사용한 스택
 - Java Spring Boot
-- JPA
+- Spring Data JPA
 - HTML
 - Gradle
 - Mysql (workbench)
